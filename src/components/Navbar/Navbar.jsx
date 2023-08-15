@@ -30,11 +30,17 @@ const Navbar = () => {
           {Tonggle && (
             <div className="fixed w-96 top-0 left-0 h-full bg-teal-700 flex flex-col justify-center items-center shadow-lg gap-8 py-8">
               {navLinks.map((navLink) => {
-                return <MobileNavLinks key={navLink.id} {...navLink} />;
+                return (
+                  <MobileNavLinks
+                    key={navLink.id}
+                    {...navLink}
+                    setTonggle={setTonggle}
+                  />
+                );
               })}
               <HiX
                 size={25}
-                className=" absolute right-12 top-12 right-13 text-3xl"
+                className=" absolute right-12 top-12 right-13 cursor-pointer text-3xl"
                 onClick={() => setTonggle(false)}
                 // onClick={(prev) => setTonggle(!prev)}
               />

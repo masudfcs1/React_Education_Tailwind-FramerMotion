@@ -1,7 +1,7 @@
 import {
   Home,
   About,
-  Course,
+  Courses,
   Contact,
   Footer,
   Navbar,
@@ -10,17 +10,18 @@ import {
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-        <Home />
-        <About />
-        <Course />
-        <Teacher />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <div className=" font-Poppins bg-Solitude">
+      <Navbar />
+
+      <Home />
+
+      <About />
+
+      <Courses />
+      <Teacher />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
