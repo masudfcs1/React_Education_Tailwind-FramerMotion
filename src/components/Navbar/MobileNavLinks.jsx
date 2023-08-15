@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-const NavLink = ({ herf, link }) => {
+const MobileNavLinks = ({ link, herf }) => {
   return (
     <li className="list-none cursor-pointer mr-8">
       <Link
@@ -17,4 +17,4 @@ const NavLink = ({ herf, link }) => {
   );
 };
 
-export default NavLink;
+export default MobileNavLinks;
