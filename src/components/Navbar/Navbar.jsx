@@ -3,7 +3,7 @@ import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import NavLink from "./NavLink";
 import MobileNavLinks from "./MobileNavLinks";
-
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [Tonggle, setTonggle] = useState(false);
   const [active, setactive] = useState(null);

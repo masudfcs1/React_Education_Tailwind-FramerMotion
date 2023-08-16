@@ -3,7 +3,24 @@ import { categories } from "../../../Data";
 import { courses } from "../../../Data";
 import Categories from "./Categories";
 import Course from "./Course";
+import { motion } from "framer-motion";
+
 const Courses = () => {
+  const container = {
+    hidden: {
+      opacity: 0,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <div className="section" id="courses">
       <div className="text-center">
@@ -17,11 +34,16 @@ const Courses = () => {
           modi libero! Nesciunt.
         </p>
       </div>
-      <div className=" grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className=" grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8"
+      >
         {categories.map((category) => {
           return <Categories key={category.id} {...category} />;
         })}
-      </div>
+      </motion.div>
       <div className=" text-xl font-bold mt-[24px]"> Most Popular Courses</div>
       <div className=" mt-5 overflow-x-hidden w-full  relative">
         <div className=" flex animate-slide gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%] ">
