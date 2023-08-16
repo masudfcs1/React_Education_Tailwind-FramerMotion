@@ -14,11 +14,12 @@ const Course = ({ image, category, title, participants, rating, price }) => {
           <div className=" text-sm font-bold"> {participants} </div>
         </div>
         <div className=" flex items-center gap-2">
-          <div>
-            <AiOutlineStar />
+          <div className=" bg-Solitude p-1 rounded-full">
+            <AiOutlineStar className=" text-yellow" />
           </div>
-          <div> {rating} </div>
+          <div className=" text-sm font-bold"> {rating} </div>
         </div>
+        <div className=" font-bold text-sm">${price} </div>
       </div>
     </div>
   );
