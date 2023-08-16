@@ -27,6 +27,23 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <div className="md:w-[60%]">
+          <img src={hero} alt="" />
+        </div>
+      </div>
+      <p className=" text-center text-xl">
+        We collaborate wiht{" "}
+        <span className=" text-Teal">
+          {" "}
+          100+ leading universities ans companies
+        </span>
+      </p>
+      <div className=" flex items-center justify-center gap-5 p-2">
+        {logos.map((logo, i) => (
+          <div key={i}>
+            <img src={logo} alt="" className="w-full object-cover" />
+          </div>
+        ))}
       </div>
     </div>
   );

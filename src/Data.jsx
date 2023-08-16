@@ -145,7 +145,7 @@ export const courses = [
   },
 ];
 
-export const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
+export const logos = [logo1, logo2, logo4, logo3, logo5, logo6];
 
 export const accordions = [
   {
