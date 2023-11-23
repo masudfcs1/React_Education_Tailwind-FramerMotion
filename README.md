@@ -1,4 +1,4 @@
-# React + Vite
+# React_Education_Tailwind-FramerMotion
 
 #Start run ->> npm run dev
 
