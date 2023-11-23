@@ -14,6 +14,7 @@ Live Demo->https://reacteducation.vercel.app/
 ![Group 6](https://github.com/masudfcs1/React_Education_Tailwind-FramerMotion/assets/57311382/f00970c0-8179-4277-af17-a2bfcc979ea9)
 
 The React_Education web application, crafted with React, Tailwind CSS, and Framer Motion, epitomizes efficiency and elegance. React's modular components, Tailwind's styling simplicity, and Framer Motion's animation prowess converge, creating an immersive educational platform. The synergy of these technologies ensures a seamless blend of functionality, aesthetics, and dynamic user engagement.
+
 https://github.com/masudfcs1/React_Education_Tailwind-FramerMotion/assets/57311382/54e7a9c0-d769-4fc9-8bcb-f40ed39dc9bd
 
 
